@@ -20,6 +20,7 @@
 }
 
 body {
+  overflow-x: hidden;
   height: max-content;
   background: var(--foreground);
   color:var(--background) ;

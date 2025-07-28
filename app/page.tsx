@@ -7,7 +7,7 @@ export default function Home() {
   const scrollYProgress=useScroll()
   return (
     <>
-     <Brain scrollYProgress={scrollYProgress.scrollYProgress} />
+     {/* <Brain scrollYProgress={scrollYProgress.scrollYProgress} /> */}
     </>
     
   );
