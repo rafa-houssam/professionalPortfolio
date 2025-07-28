@@ -69,7 +69,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl mb-10 ">
+    <div className="h-full flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl  ">
       {/* LINKS */}
       <div className="hidden md:flex gap-4 ">
         {links.map((link) => (

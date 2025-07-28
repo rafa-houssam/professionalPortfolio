@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import TransitionProvider from "./components/transitionprovider"
 
 
 
@@ -23,12 +24,10 @@ export default function RootLayout({
 
       >
         <div className="w-screen h-150 bg-gradient-to-b from-blue-50 to-red-100 ">
-          <div className="h-24">
-            <Navbar key={1} />
-          </div>
+         
           <div className="h-[calc(100vh-6rem)]">
 
-            {children}
+           <TransitionProvider>{children}</TransitionProvider>
           </div>
         </div>
       </body>
