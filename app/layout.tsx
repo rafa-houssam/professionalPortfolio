@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
 
       >
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 ">
+        <div className="w-screen h-150 bg-gradient-to-b from-blue-50 to-red-100 ">
           <div className="h-24">
             <Navbar key={1} />
           </div>
