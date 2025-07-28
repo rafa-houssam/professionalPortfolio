@@ -21,6 +21,7 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
   height: max-content;
   background: var(--foreground);
   color:var(--background) ;
