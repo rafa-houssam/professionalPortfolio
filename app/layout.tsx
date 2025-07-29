@@ -25,10 +25,10 @@ export default function RootLayout({
       >
         <div className="w-screen h-150 bg-gradient-to-b from-blue-50 to-red-100 ">
          
-          <div className="h-[calc(100vh-6rem)]">
+         
 
            <TransitionProvider>{children}</TransitionProvider>
-          </div>
+          
         </div>
       </body>
     </html>
