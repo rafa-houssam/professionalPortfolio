@@ -14,9 +14,15 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row gap-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="hidden lg:block lg:w-1/2 lg:h-full relative mt-12">
-          <Image src="/hero.png" alt="Hero image" fill className="object-contain" />
-        </div>
+        <div className="hidden lg:block relative mt-23 w-80 h-80 lg:rounded-full overflow-hidden ">
+  <Image
+    src="/hero.png"
+    alt="Hero image"
+    fill
+    className="object-cover rounded-full"
+  />
+</div>
+
 
         {/* TEXT CONTAINER */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 items-center justify-center text-center lg:text-left">
@@ -33,12 +39,12 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 pb-5">
             <Link href="/portfolio">
-              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white w-full sm:w-auto">
+              <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white w-full sm:w-auto hover:cursor-pointer">
                 View My Work
               </button>
             </Link>
             <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black w-full sm:w-auto">
+              <button className="p-4 rounded-lg ring-1 ring-black w-full sm:w-auto hover:cursor-pointer">
                 Contact Me
               </button>
             </Link>

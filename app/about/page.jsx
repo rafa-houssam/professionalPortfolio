@@ -244,9 +244,16 @@ I consider myself a determined learner, always working hard to build strong, rea
                     2024 - Present
                   </div>
                   {/* JOB COMPANY */}
+                 <div className="flex flex-row gap-2">
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    freelance
+                    next.js
                   </div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    html/css/js
+                  </div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                   Tailwind
+                  </div></div>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
@@ -286,9 +293,13 @@ I consider myself a determined learner, always working hard to build strong, rea
                     2025-present{" "}
                   </div>
                   {/* JOB COMPANY */}
+                  <div className="flex flex-row gap-2">
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    freelance
+                    python
                   </div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Django
+                  </div></div>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
@@ -306,7 +317,7 @@ I consider myself a determined learner, always working hard to build strong, rea
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2025-till now{" "}
+                    since 2025{" "}
                   </div>
                 </div>
                 {/* CENTER */}
