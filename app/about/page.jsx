@@ -18,7 +18,7 @@ const AboutPage = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="h-full overflow-y-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -40,13 +40,13 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg font-light">
+            <p className="text-lg ">
               I'm a dedicated and ambitious Computer Science student at ESI Algiers, passionate about building innovative solutions through code. My journey in technology is driven by curiosity and a desire to make meaningful impact.
 
               I consider myself a determined learner, always working hard to build strong, real-world skills in web development and AI. I'm actively involved in projects, clubs, and continuous learning to make the most of my journey.
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic font-light">
+            <span className="italic font-light ">
               "I'm passionate about full-stack development, curious about AI, and always eager to learn and grow"
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
@@ -94,79 +94,79 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 TypeScript
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Next.js
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Pandas
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 PostgreSQL
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Numpy
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Python
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Django
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Postman
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Matplotlib
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Github
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Bootstrap
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Framer Motion
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Ninja API
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Prisma
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 SQL
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Vite
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Docker
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 C
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Java
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Git
               </div>
-              <div className="rounded font-light  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded   p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
               </div>
             </motion.div>
@@ -219,11 +219,11 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    front-end developer
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
+                    Front-end developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic font-light">
+                  <div className="p-3 text-sm italic ">
                     I led web development, offering expertise in JavaScript
                     frameworks.{" "}
                   </div>
@@ -269,11 +269,11 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    backend developer
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
+                    Backend developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic font-light">
+                  <div className="p-3 text-sm italic ">
                     I moved to building full stack apps with django and next.js.{" "}
                   </div>
                   {/* JOB DATE */}
@@ -295,16 +295,16 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
                     Data science and AI {" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic font-light">
+                  <div className="p-3 text-sm italic ">
                     "I began exploring Data Science and AI by applying a variety of tools to solve problems, gradually deepening my understanding through hands-on projects and continuous learning{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    since 2025{" "}
+                    2025-present{" "}
                   </div>
                    <div className="flex flex-row gap-2">
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">

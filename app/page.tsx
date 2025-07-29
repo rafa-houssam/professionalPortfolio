@@ -32,7 +32,7 @@ const Homepage = () => {
           </h1>
           
           {/* DESCRIPTION */}
-          <p className="md:text-xl font-light">
+          <p className="md:text-xl ">
             Passionate about full-stack development, curious about AI, and always eager to learn and grow. I enjoy working on meaningful projects, solving problems, and exploring new ideas.
           </p>
           

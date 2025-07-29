@@ -42,7 +42,7 @@ const items = [
 const PortfolioPage = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["12%", "-60%"]);
 
   return (
     <motion.div
@@ -53,40 +53,40 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={ref}>
         {/* Header */}
-        <div className="w-full h-[calc(100vh-6rem)] flex items-center justify-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-center px-4">
+        <div className="w-full h-[calc(100vh-6rem)] flex items-center justify-center text-5xl sm:text-7xl md:text-8xl text-center px-4 font-bold tracking-tight text-gray-900 ">
           My Works
         </div>
 
         {/* Scroll Section */}
-        <div className="sticky top-0 h-screen overflow-hidden flex items-center">
-          <motion.div style={{ x }} className="flex w-max">
-            {/* Spacer */}
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-
+        <div className="sticky top-0 h-screen overflow-hidden flex items-center bg-red-50 ">
+          <motion.div
+            style={{ x }}
+            className="flex w-max gap-10 px-10 sm:px-16 md:px-24"
+          >
             {/* Projects */}
             {items.map((item) => (
               <div
                 key={item.id}
-                className={`h-screen w-screen flex items-end justify-center bg-gradient-to-r ${item.color} p-4 sm:p-8`}
+                className={`flex-shrink-0 h-[80vh] w-[80vw] sm:w-[60vw] md:w-[50vw] flex items-center justify-center rounded-3xl shadow-lg bg-gradient-to-r ${item.color} transition-transform duration-500`}
               >
-                <div className="flex flex-col gap-4 text-white max-w-full sm:max-w-xl md:max-w-2xl">
-                  <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-96 rounded-lg overflow-hidden">
+                <div className="flex flex-col gap-6 p-6 sm:p-10 md:p-12 text-white max-w-md sm:max-w-lg">
+                  <div className="relative w-full h-52 sm:h-64 md:h-72 rounded-xl overflow-hidden shadow-md">
                     <Image
                       src={item.img}
                       alt={item.title}
                       fill
-                      className="object-cover rounded-lg"
+                      className="object-cover"
                       priority
                     />
                   </div>
-                  <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-950 drop-shadow-md">
                     {item.title}
                   </h1>
-                  <p className="text-sm sm:text-base md:text-lg font-light text-white">
+                  <p className="text-sm sm:text-base font-semibold text-white/90">
                     {item.desc}
                   </p>
                   <Link href={item.link} target="_blank">
-                    <button className="px-4 py-2 bg-white text-gray-700 rounded-md font-semibold hover:bg-gray-200 transition">
+                    <button className="self-start px-5 py-2 bg-white text-gray-900 rounded-lg font-semibold shadow hover:bg-gray-200 transition-all hover:cursor-pointer">
                       See Code
                     </button>
                   </Link>
@@ -99,7 +99,7 @@ const PortfolioPage = () => {
 
       {/* Call to Action */}
       <div className="w-full h-screen flex flex-col gap-12 items-center justify-center text-center px-4 mt-48 sm:mt-60">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-800 ">
           Do you have a project?
         </h1>
         <div className="relative">
@@ -117,14 +117,14 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-sm sm:text-lg">
-                Front-end and Backend developer
+               Full stack developer — Let’s Build Together!
               </textPath>
             </text>
           </motion.svg>
 
           <Link
             href="/contact"
-            className="absolute top-0 left-0 right-0 bottom-0 m-auto w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base"
+            className="absolute top-0 left-0 right-0 bottom-0 m-auto w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base hover:scale-110 transition"
           >
             Hire Me
           </Link>

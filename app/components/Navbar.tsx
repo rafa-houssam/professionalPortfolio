@@ -80,7 +80,7 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl: xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm bg-black rounded-md p-1 font-bold flex items-center justify-center"
         >
           <span className="text-white mr-1">Rafa</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">

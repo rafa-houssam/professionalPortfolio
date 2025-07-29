@@ -3,7 +3,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import TransitionProvider from "./components/transitionprovider"
-import { Inter } from 'next/font/google'; 
+import { Nunito_Sans } from 'next/font/google'
+
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito',
+  weight: ['200', '300', '400', '600', '700', '800', '1000'],
+  display: 'swap',
+})
  
 
 
@@ -20,11 +27,9 @@ export default function RootLayout({
 }>) {
 
   return (
-   <html lang="en" > 
-      <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-      <link rel="preconnect" href="https://fonts.gstatic.com" /> 
-      <link precedence="default" href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet"/> 
-      <body 
+   <html lang="en" className={nunitoSans.variable} > 
+     
+      <body  
 
       >
         <div className="w-screen h-150 bg-gradient-to-b from-blue-50 to-red-100 ">
