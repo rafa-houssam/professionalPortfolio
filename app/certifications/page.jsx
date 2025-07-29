@@ -18,6 +18,12 @@ const certifications = {
   linkedin: [
     "/c1.jpeg",
     "/c2.jpeg",
+    "/c3.jpeg",
+    "/c4.jpeg",
+    "/c5.jpeg",
+    "/c6.jpeg",
+    "/c7.jpeg",
+    "/c8.jpeg",
   
   ],
   frontendMasters: [

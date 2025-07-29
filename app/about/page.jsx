@@ -196,7 +196,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48"
+            className="flex flex-col gap-12 justify-center pb-1 mb-0"
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}
@@ -329,10 +329,35 @@ const AboutPage = () => {
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
+                
 
               </div>
             </motion.div>
+            
           </div>
+          <div className="text-end">
+  <p className="mt-0 text-lg font-medium">Available for Freelance</p>
+  <div className="flex justify-end gap-4 flex-wrap">
+    <a
+      href="https://khamsat.com/user/rafa_houssam"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black text-white px-4 py-2 rounded"
+    >
+      Khamsat
+    </a>
+    <a
+      href="https://mostaql.com/u/rafa_houssam"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white text-black px-4 py-2 rounded border border-black"
+    >
+      Mostaql
+    </a>
+  </div>
+</div>
+
+          
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
