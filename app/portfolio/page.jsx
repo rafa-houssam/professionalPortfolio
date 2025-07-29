@@ -64,6 +64,12 @@ const PortfolioPage = () => {
             className="flex w-max gap-10 px-10 sm:px-16 md:px-24"
           >
             {/* Projects */}
+             <div
+        
+                className={`flex-shrink-0 h-[80vh] w-[80vw] sm:w-[60vw] md:w-[50vw]  items-center justify-center rounded-3xl  bg-gradient-to-r  transition-transform duration-500 `}
+              ></div>
+            
+
             {items.map((item) => (
               <div
                 key={item.id}
@@ -124,7 +130,7 @@ const PortfolioPage = () => {
 
           <Link
             href="/contact"
-            className="absolute top-0 left-0 right-0 bottom-0 m-auto w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base hover:scale-110 transition"
+            className="absolute top-0 left-0 right-0 bottom-0 m-auto w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base hover:scale-110 transition hover:cursor-pointer"
           >
             Hire Me
           </Link>

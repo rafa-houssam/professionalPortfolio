@@ -46,7 +46,7 @@ const ContactPage = () => {
           <div className=" ">
             {text.split("").map((letter, index) => (
               <motion.span
-              className=" "
+                className=" "
                 key={index}
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
@@ -59,42 +59,52 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            
+
           </div>
         </div>
         {/* FORM CONTAINER */}
-        <form
-          onSubmit={sendEmail}
-          ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 font-light"
-        >
-          <span>Dear Rafa Houssam,</span>
-          <textarea
-            rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
-            name="user_message"
-          />
-          <span>My mail address is:</span>
-          <input
-            name="user_email"
-            type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
-          />
-          <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4 hover:cursor-pointer">
-            Send
-          </button>
-          {success && (
-            <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
-            </span>
-          )}
-          {error && (
-            <span className="text-red-600 font-semibold">
-              Something went wrong!
-            </span>
-          )}
-        </form>
+       <form
+  onSubmit={sendEmail}
+  ref={form}
+  className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 "
+>
+  <div>
+    <span>Dear Rafa Houssam,</span>
+    <textarea
+      name="user_message"
+      
+      placeholder="Write your message here..."
+      className="w-full mt-2 placeholder:text-gray-400 bg-transparent  border-black outline-none shadow-inner py-1 px-2 font-light resize-none"
+    />
+  </div>
+
+  <div>
+    <span>My mail address is:</span>
+    <input
+      name="user_email"
+      type="text"
+      placeholder="Write your email here..."
+      className="w-full mt-2 placeholder:text-gray-400 bg-transparent  border-black outline-none shadow-inner py-1 px-2 font-light"
+    />
+  </div>
+
+  <span>Regards</span>
+  <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4 hover:cursor-pointer">
+    Send
+  </button>
+
+  {success && (
+    <span className="text-green-600 font-semibold">
+      Your message has been sent successfully!
+    </span>
+  )}
+  {error && (
+    <span className="text-red-600 font-semibold">
+      Something went wrong!
+    </span>
+  )}
+</form>
+
       </div>
     </motion.div>
   );
