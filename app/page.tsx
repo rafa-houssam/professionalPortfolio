@@ -20,7 +20,7 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <h1 className="text-3xl md:text-4xl font-bold">
            3rd year cs student at ESI Algiers,Web developer,AI enthusiast.
           </h1>
           {/* DESC */}

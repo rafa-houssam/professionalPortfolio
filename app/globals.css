@@ -20,8 +20,15 @@
 }
 
 body {
-
+  
   height: max-content;
   color:var(--background) ;
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "ADLaM Display", system-ui;
+  
 }
+.adlam-display-regular {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+

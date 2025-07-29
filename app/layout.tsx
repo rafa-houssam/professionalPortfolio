@@ -1,9 +1,10 @@
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import TransitionProvider from "./components/transitionprovider"
+import { Inter } from 'next/font/google'; 
+ 
 
 
 
@@ -19,8 +20,11 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
-      <body
+   <html lang="en"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+      <link rel="preconnect" href="https://fonts.gstatic.com" /> 
+      <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet"/> 
+      <body 
 
       >
         <div className="w-screen h-150 bg-gradient-to-b from-blue-50 to-red-100 ">
@@ -34,3 +38,4 @@ export default function RootLayout({
     </html>
   );
 }
+

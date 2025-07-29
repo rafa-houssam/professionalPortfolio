@@ -8,34 +8,34 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "/p1.png",
-    link: "https://lama.dev",
+    title: "LMCS research laboratory",
+    desc: "Research management platform built with modern web technologies. A comprehensive system for managing research projects, collaboration, and data visualization.",
+    img: "/p2.jpeg",
+    link: "https://github.com/rafa-houssam/LMCS-Scholars",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "/p2.jpeg",
-    link: "https://lama.dev",
+    title: "studybuddy",
+    desc: "Study platform with rooms, discussions, and user authentication. Built with Django, providing a collaborative learning environment for students.",
+    img: "/p4.jpeg",
+    link: "https://github.com/rafa-houssam/Django",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "/p3.jpeg",
-    link: "https://lama.dev",
+    title: "Basic ecommerce app",
+    desc: "Full-stack e-commerce platform built with modern web technologies. Features product management, user authentication, shopping cart, and order processing system.",
+    img: "/ecom.png",
+    link: "https://github.com/rafa-houssam/basic-ecommerce-website",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "/dribbble.png",
-    link: "https://lama.dev",
+    title: "onyva webapp",
+    desc: "onyva is web app where algerian youth can search for real activities far from their phones ,these activities includes charity,football,planting... and many other usefull activities",
+    img: "/p3.jpeg",
+    link: "https://github.com/rafa-houssam/Hackin1",
   },
 ];
 
@@ -61,21 +61,21 @@ const PortfolioPage = () => {
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen flex items-end justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
-                    {item.title}
-                  </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                <div className="flex flex-col gap-3 text-white mt-5">
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg ">
                     <Image src={item.img} alt="" fill />
                   </div>
+                  <h1 className="text-xl font-bold md:text-3xl lg:text-4xl xl:text-4xl text-blue-500">
+                    {item.title}
+                  </h1>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                  <Link href={item.link} className="flex justify-center items-center text-center">
+                    <button className="p-3 text-sm md:p-2 md:text-md lg:p-3 lg:text-lg bg-white text-gray-600 font-semibold mb-6  rounded">See code </button>
                   </Link>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center mt-20">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
@@ -100,7 +100,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+               Front-end and Backend developer
               </textPath>
             </text>
           </motion.svg>
