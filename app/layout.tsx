@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import TransitionProvider from "./components/transitionprovider"
 import { Nunito_Sans } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next"
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -36,7 +37,7 @@ export default function RootLayout({
          
          
 
-           <TransitionProvider>{children}</TransitionProvider>
+           <TransitionProvider>{children} <Analytics /></TransitionProvider>
           
         </div>
       </body>
