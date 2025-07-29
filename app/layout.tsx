@@ -20,10 +20,10 @@ export default function RootLayout({
 }>) {
 
   return (
-   <html lang="en"> 
+   <html lang="en" > 
       <link rel="preconnect" href="https://fonts.googleapis.com"/> 
       <link rel="preconnect" href="https://fonts.gstatic.com" /> 
-      <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet"/> 
+      <link precedence="default" href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet"/> 
       <body 
 
       >

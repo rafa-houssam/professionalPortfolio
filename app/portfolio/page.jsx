@@ -71,7 +71,7 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-3xl lg:text-4xl xl:text-4xl text-blue-500">
                     {item.title}
                   </h1>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] font-light">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-center items-center text-center">
@@ -83,7 +83,7 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center mt-20">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center mt-60">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg

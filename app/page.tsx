@@ -24,7 +24,7 @@ const Homepage = () => {
            3rd year cs student at ESI Algiers,Web developer,AI enthusiast.
           </h1>
           {/* DESC */}
-          <p className="md:text-xl">
+          <p className="md:text-xl font-light">
             Passionate about full-stack development, curious about AI, and always eager to learn and grow. I enjoy working on meaningful projects, solving problems, and exploring new ideas.
           </p>
           {/* BUTTONS */}

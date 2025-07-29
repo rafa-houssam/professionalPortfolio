@@ -24,6 +24,8 @@ body {
   height: max-content;
   color:var(--background) ;
    font-family: "ADLaM Display", system-ui;
+   font-weight: 600;
+   /* font-size: small; */
   
 }
 .adlam-display-regular {
