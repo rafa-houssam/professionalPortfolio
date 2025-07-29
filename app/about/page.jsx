@@ -224,7 +224,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic ">
-                    I led web development, offering expertise in JavaScript
+                    I started with html/css/js and then i moved to 
                     frameworks.{" "}
                   </div>
                   {/* JOB DATE */}
@@ -274,7 +274,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic ">
-                    I moved to building full stack apps with django and next.js.{" "}
+                    I moved  full stack apps with django and next.js.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">

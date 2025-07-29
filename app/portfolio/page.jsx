@@ -42,7 +42,7 @@ const items = [
 const PortfolioPage = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["12%", "-60%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["12%", "-80%"]);
 
   return (
     <motion.div
@@ -54,7 +54,7 @@ const PortfolioPage = () => {
       <div className="h-[600vh] relative" ref={ref}>
         {/* Header */}
         <div className="w-full h-[calc(100vh-6rem)] flex items-center justify-center text-5xl sm:text-7xl md:text-8xl text-center px-4 font-bold tracking-tight text-gray-900 ">
-          My Works
+          My Work
         </div>
 
         {/* Scroll Section */}

@@ -34,8 +34,9 @@ const ContactPage = () => {
   };
 
   return (
+     
     <motion.div
-      className="h-full"
+     className="bg-[#f5f5f5] min-h-screen w-full py-16 px-8 space-y-24 overflow-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -43,7 +44,7 @@ const ContactPage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
-          <div className=" ">
+          <div className="lg:mt-60 ">
             {text.split("").map((letter, index) => (
               <motion.span
                 className=" "

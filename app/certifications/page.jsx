@@ -18,12 +18,7 @@ const certifications = {
   linkedin: [
     "/c1.jpeg",
     "/c2.jpeg",
-    "/c3.jpeg",
-    "/c4.jpeg",
-    "/c5.jpeg",
-    "/c6.jpeg",
-    "/c7.jpeg",
-    "/c8.jpeg",
+  
   ],
   frontendMasters: [
     "/f1.jpeg",
@@ -68,17 +63,22 @@ const CertificationsPage = () => {
               animate="animate"
             >
               {[...images, ...images].map((url, index) => (
-                <div
-                  key={index}
-                  className={`min-w-[300px] h-[200px] ${url=="/c1.jpegs" ||url=="/c2.jpegs" ||url=="/c3.jpegs" ||url=="/c4.jpegs" ||url=="/c5.jpegs" ||url=="/c6.jpegs" ||url=="/c7.jpegs" ||url=="/c8.jpegs"? "bg-red":"bg-blue"}  rounded-lg shadow-md flex items-center justify-center`}
-                >
-                  <Image
+               <div
+  key={index}
+  className={`min-w-[300px] h-[200px] ${
+    ["/c1.jpeg", "/c2.jpeg", "/c3.jpeg", "/c4.jpeg", "/c5.jpeg", "/c6.jpeg", "/c7.jpeg", "/c8.jpeg"].includes(url)
+      ? "bg-red"
+      : "bg-blue"
+  } rounded-lg  flex items-center justify-center`}
+>
+      {![ "/c3.jpeg", "/c4.jpeg", "/c5.jpeg", "/c6.jpeg", "/c7.jpeg", "/c8.jpeg"].includes(url) &&(<Image
                     src={url}
-                    alt={`cert-${index}`}
+                    alt={``}
                     width={300}
                     height={200}
                     className="rounded-lg object-cover"
-                  />
+                  />)}
+                  
                 </div>
               ))}
             </motion.div>
