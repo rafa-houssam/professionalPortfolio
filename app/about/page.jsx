@@ -318,6 +318,7 @@ I consider myself a determined learner, always working hard to build strong, rea
                   </div>
                 </div>
                 {/* RIGHT */}
+                 <div className="w-1/3 "></div>
                 
               </div>
             </motion.div>

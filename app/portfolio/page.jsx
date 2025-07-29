@@ -18,7 +18,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "studybuddy",
     desc: "Study platform with rooms, discussions, and user authentication. Built with Django, providing a collaborative learning environment for students.",
-    img: "/p4.jpeg",
+    img: "/p4.png",
     link: "https://github.com/rafa-houssam/Django",
   },
   {
@@ -33,49 +33,62 @@ const items = [
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "onyva webapp",
-    desc: "onyva is web app where algerian youth can search for real activities far from their phones ,these activities includes charity,football,planting... and many other usefull activities",
+    desc: "onyva is a web app where Algerian youth can search for real activities away from their phones, including charity, football, planting, and other useful experiences.",
     img: "/p3.jpeg",
     link: "https://github.com/rafa-houssam/Hackin1",
   },
 ];
 
 const PortfolioPage = () => {
-  const ref = useRef();
-
+  const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
   return (
     <motion.div
-      className="h-full "
+      className="h-full"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        {/* Header */}
+        <div className="w-full h-[calc(100vh-6rem)] flex items-center justify-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-center px-4">
           My Works
         </div>
-        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex">
+
+        {/* Scroll Section */}
+        <div className="sticky top-0 h-screen overflow-hidden flex items-center">
+          <motion.div style={{ x }} className="flex w-max">
+            {/* Spacer */}
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+
+            {/* Projects */}
             {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-end justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
+                className={`h-screen w-screen flex items-end justify-center bg-gradient-to-r ${item.color} p-4 sm:p-8`}
               >
-                <div className="flex flex-col gap-3 text-white mt-5">
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] rounded-lg ">
-                    <Image src={item.img} alt="" fill />
+                <div className="flex flex-col gap-4 text-white max-w-full sm:max-w-xl md:max-w-2xl">
+                  <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-96 rounded-lg overflow-hidden">
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      fill
+                      className="object-cover rounded-lg"
+                      priority
+                    />
                   </div>
-                  <h1 className="text-xl font-bold md:text-3xl lg:text-4xl xl:text-4xl text-blue-500">
+                  <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">
                     {item.title}
                   </h1>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] font-light">
+                  <p className="text-sm sm:text-base md:text-lg font-light text-white">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-center items-center text-center">
-                    <button className="p-3 text-sm md:p-2 md:text-md lg:p-3 lg:text-lg bg-white text-gray-600 font-semibold mb-6  rounded">See code </button>
+                  <Link href={item.link} target="_blank">
+                    <button className="px-4 py-2 bg-white text-gray-700 rounded-md font-semibold hover:bg-gray-200 transition">
+                      See Code
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -83,14 +96,18 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center mt-60">
-        <h1 className="text-8xl">Do you have a project?</h1>
+
+      {/* Call to Action */}
+      <div className="w-full h-screen flex flex-col gap-12 items-center justify-center text-center px-4 mt-48 sm:mt-60">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold">
+          Do you have a project?
+        </h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px] "
+            className="w-40 h-40 sm:w-64 sm:h-64 md:w-[500px] md:h-[500px]"
           >
             <defs>
               <path
@@ -99,14 +116,15 @@ const PortfolioPage = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
-               Front-end and Backend developer
+              <textPath xlinkHref="#circlePath" className="text-sm sm:text-lg">
+                Front-end and Backend developer
               </textPath>
             </text>
           </motion.svg>
+
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="absolute top-0 left-0 right-0 bottom-0 m-auto w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base"
           >
             Hire Me
           </Link>

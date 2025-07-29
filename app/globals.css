@@ -32,4 +32,10 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+@media (max-width: 380px) {
+  .hide-on-tiny {
+    opacity: 0;
+  }
+}
+
 
