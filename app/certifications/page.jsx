@@ -18,13 +18,6 @@ const certifications = {
   linkedin: [
     "/c1.jpeg",
     "/c2.jpeg",
-    "/c3.jpeg",
-    "/c4.jpeg",
-    "/c5.jpeg",
-    "/c6.jpeg",
-    "/c7.jpeg",
-    "/c8.jpeg",
-  
   ],
   frontendMasters: [
     "/f1.jpeg",
@@ -56,38 +49,52 @@ const CertificationsPage = () => {
     <div className="bg-[#f5f5f5] min-h-screen w-full py-16 px-8 space-y-24 overflow-hidden">
       <h1 className="text-4xl font-bold text-center text-gray-800">My Certifications</h1>
 
-      {/* Section Generator */}
       {Object.entries(certifications).map(([category, images]) => (
         <section key={category} className="space-y-6">
           <h2 className="text-2xl font-semibold text-gray-700 capitalize">
             {category.replace(/([A-Z])/g, " $1")} Certifications
           </h2>
+
           <div className="relative w-full overflow-hidden">
-            <motion.div
-              className="flex space-x-4 w-max"
-              variants={scrollVariants}
-              animate="animate"
-            >
-              {[...images, ...images].map((url, index) => (
-               <div
-  key={index}
-  className={`min-w-[300px] h-[200px] ${
-    ["/c1.jpeg", "/c2.jpeg", "/c3.jpeg", "/c4.jpeg", "/c5.jpeg", "/c6.jpeg", "/c7.jpeg", "/c8.jpeg"].includes(url)
-      ? "bg-red"
-      : "bg-blue"
-  } rounded-lg  flex items-center justify-center`}
->
-      {![ "/c3.jpeg", "/c4.jpeg", "/c5.jpeg", "/c6.jpeg", "/c7.jpeg", "/c8.jpeg"].includes(url) &&(<Image
-                    src={url}
-                    alt={``}
-                    width={300}
-                    height={200}
-                    className="rounded-lg object-cover"
-                  />)}
-                  
-                </div>
-              ))}
-            </motion.div>
+            {category === "linkedin" ? (
+              <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
+                {images.map((url, index) => (
+                  <div
+                    key={index}
+                    className="min-w-[300px] h-[200px] bg-white rounded-lg flex items-center justify-center"
+                  >
+                    <Image
+                      src={url}
+                      alt={`LinkedIn Certification ${index + 1}`}
+                      width={300}
+                      height={200}
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <motion.div
+                className="flex space-x-4 w-max"
+                variants={scrollVariants}
+                animate="animate"
+              >
+                {[...images, ...images].map((url, index) => (
+                  <div
+                    key={index}
+                    className="min-w-[300px] h-[200px] bg-[#f2efdc11] rounded-lg flex items-center justify-center"
+                  >
+                    <Image
+                      src={url}
+                      alt={`${category} Certification ${index + 1}`}
+                      width={300}
+                      height={200}
+                      className="rounded-lg object-cover"
+                    />
+                  </div>
+                ))}
+              </motion.div>
+            )}
           </div>
         </section>
       ))}

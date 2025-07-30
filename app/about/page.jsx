@@ -18,13 +18,13 @@ const AboutPage = () => {
 
   return (
     <motion.div
-      className="h-full overflow-y-hidden"
+      className="h-full "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-y-scroll overflow-x-hidden lg:flex" ref={containerRef}>
+      <div className="h-full overflow-x-hidden lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
@@ -224,7 +224,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic ">
-                    I started with html/css/js and then i moved to 
+                    I started with html/css/js and then i moved to
                     frameworks.{" "}
                   </div>
                   {/* JOB DATE */}
@@ -306,7 +306,7 @@ const AboutPage = () => {
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2025-present{" "}
                   </div>
-                   <div className="flex flex-row gap-2">
+                  <div className="flex flex-row gap-2">
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                       python
                     </div>
@@ -316,8 +316,8 @@ const AboutPage = () => {
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                       Pandas
                     </div>
-                    </div>
-                  
+                  </div>
+
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
@@ -329,35 +329,15 @@ const AboutPage = () => {
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
-                
+
 
               </div>
             </motion.div>
-            
-          </div>
-          <div className="text-end">
-  <p className="mt-0 text-lg font-medium">Available for Freelance</p>
-  <div className="flex justify-end gap-4 flex-wrap">
-    <a
-      href="https://khamsat.com/user/rafa_houssam"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-black text-white px-4 py-2 rounded"
-    >
-      Khamsat
-    </a>
-    <a
-      href="https://mostaql.com/u/rafa_houssam"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-white text-black px-4 py-2 rounded border border-black"
-    >
-      Mostaql
-    </a>
-  </div>
-</div>
 
+          </div>
           
+
+
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
