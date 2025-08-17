@@ -27,12 +27,12 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 items-center justify-center text-center lg:text-left">
           {/* TITLE */}
-          <h1 className="text-3xl md:text-4xl font-bold">
+          <h1 className="text-3xl md:text-4xl font-bold text-black">
             3rd year CS student at ESI Algiers, Web developer, AI enthusiast.
           </h1>
           
           {/* DESCRIPTION */}
-          <p className="md:text-xl ">
+          <p className="md:text-xl text-black  ">
             Passionate about full-stack development, curious about AI, and always eager to learn and grow. I enjoy working on meaningful projects, solving problems, and exploring new ideas.
           </p>
           

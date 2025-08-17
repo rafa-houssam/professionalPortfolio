@@ -70,7 +70,7 @@ const ContactPage = () => {
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 "
         >
           <div>
-            <span>Dear Rafa Houssam,</span>
+            <span className="text-black">Dear Rafa Houssam,</span>
             <textarea
               name="user_message"
 
@@ -80,7 +80,7 @@ const ContactPage = () => {
           </div>
 
           <div>
-            <span>My mail address is:</span>
+            <span className="text-black">My mail address is:</span>
             <input
               name="user_email"
               type="text"
@@ -89,7 +89,7 @@ const ContactPage = () => {
             />
           </div>
 
-          <span>Regards</span>
+          <span className="text-black">Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4 hover:cursor-pointer">
             Send
           </button>

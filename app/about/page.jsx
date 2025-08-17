@@ -196,7 +196,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-1 mb-0"
+            className="flex flex-col gap-12 justify-center pb-1 mb-0 text-black"
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}
@@ -219,27 +219,27 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
                     Front-end developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic ">
+                  <div className="p-3 text-sm italic text-black ">
                     I started with html/css/js and then i moved to
                     frameworks.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold ">
                     2024 - Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="flex flex-row gap-2">
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       next.js
                     </div>
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       html/css/js
                     </div>
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Tailwind
                     </div></div>
                 </div>
@@ -269,23 +269,23 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
                     Backend developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic ">
+                  <div className="p-3 text-sm italic text-black ">
                     I moved  full stack apps with django and next.js.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold ">
                     2025-present{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="flex flex-row gap-2">
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       python
                     </div>
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Django
                     </div></div>
                 </div>
@@ -295,11 +295,11 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
                     Data science and AI {" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic ">
+                  <div className="p-3 text-sm italic text-black ">
                     "I began exploring Data Science and AI by applying a variety of tools to solve problems, gradually deepening my understanding through hands-on projects and continuous learning{" "}
                   </div>
                   {/* JOB DATE */}
@@ -307,13 +307,13 @@ const AboutPage = () => {
                     2025-present{" "}
                   </div>
                   <div className="flex flex-row gap-2">
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       python
                     </div>
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Numpy
                     </div>
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Pandas
                     </div>
                   </div>
