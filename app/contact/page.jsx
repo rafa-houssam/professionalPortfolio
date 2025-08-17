@@ -109,7 +109,7 @@ const ContactPage = () => {
 
       </div>
       <div className="text-center mt-0">
-        <p className="mt-0 text-lg font-medium">Available for Freelance</p>
+        <p className="mt-0 text-lg font-medium text-black">Available for Freelance</p>
         <div className="flex justify-center gap-4 flex-wrap">
           <a
             href="https://khamsat.com/user/rafa_houssam"

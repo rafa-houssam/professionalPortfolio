@@ -38,9 +38,9 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl text-black">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg ">
+            <p className="text-lg text-black ">
               I'm a dedicated and ambitious Computer Science student at ESI Algiers, passionate about building innovative solutions through code. My journey in technology is driven by curiosity and a desire to make meaningful impact.
 
               I consider myself a determined learner, always working hard to build strong, real-world skills in web development and AI. I'm actively involved in projects, clubs, and continuous learning to make the most of my journey.
