@@ -204,7 +204,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl text-center lg:text-left"
             >
               EXPERIENCE
             </motion.h1>
@@ -212,27 +212,27 @@ const AboutPage = () => {
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
-              className=""
+              className="flex flex-col items-center lg:block"
             >
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex flex-col lg:flex-row justify-center lg:justify-between h-auto lg:h-48 w-full max-w-4xl">
                 {/* LEFT */}
-                <div className="w-1/3 ">
+                <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black text-center lg:text-left">
                     Front-end developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic text-black ">
+                  <div className="p-3 text-sm italic text-black text-center lg:text-left">
                     I started with html/css/js and then i moved to
                     frameworks.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold ">
+                  <div className="p-3 text-red-400 text-sm font-semibold text-center lg:text-left">
                     2024 - Present
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-row gap-2 justify-center lg:justify-start flex-wrap">
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       next.js
                     </div>
@@ -241,10 +241,11 @@ const AboutPage = () => {
                     </div>
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Tailwind
-                    </div></div>
+                    </div>
+                  </div>
                 </div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden lg:flex w-1/6 justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -252,14 +253,14 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 "></div>
+                <div className="hidden lg:block w-1/3"></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex flex-col lg:flex-row justify-center lg:justify-between h-auto lg:h-48 w-full max-w-4xl">
                 {/* LEFT */}
-                <div className="w-1/3 "></div>
+                <div className="hidden lg:block w-1/3"></div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden lg:flex w-1/6 justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -267,46 +268,47 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 ">
+                <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black text-center lg:text-left">
                     Backend developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic text-black ">
+                  <div className="p-3 text-sm italic text-black text-center lg:text-left">
                     I moved  full stack apps with django and next.js.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold ">
+                  <div className="p-3 text-red-400 text-sm font-semibold text-center lg:text-left">
                     2025-present{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-row gap-2 justify-center lg:justify-start flex-wrap">
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       python
                     </div>
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       Django
-                    </div></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex flex-col lg:flex-row justify-center lg:justify-between h-auto lg:h-48 w-full max-w-4xl">
                 {/* LEFT */}
-                <div className="w-1/3 ">
+                <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black">
+                  <div className="bg-white p-3 font-bold rounded-b-lg rounded-s-lg text-black text-center lg:text-left">
                     Data science and AI {" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic text-black ">
+                  <div className="p-3 text-sm italic text-black text-center lg:text-left">
                     "I began exploring Data Science and AI by applying a variety of tools to solve problems, gradually deepening my understanding through hands-on projects and continuous learning{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-sm font-semibold text-center lg:text-left">
                     2025-present{" "}
                   </div>
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-row gap-2 justify-center lg:justify-start flex-wrap">
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-black">
                       python
                     </div>
@@ -317,10 +319,9 @@ const AboutPage = () => {
                       Pandas
                     </div>
                   </div>
-
                 </div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden lg:flex w-1/6 justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -328,14 +329,12 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 "></div>
-
-
+                <div className="hidden lg:block w-1/3"></div>
               </div>
             </motion.div>
 
           </div>
-          
+
 
 
         </div>
