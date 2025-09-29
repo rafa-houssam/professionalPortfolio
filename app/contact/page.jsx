@@ -47,7 +47,7 @@ const ContactPage = () => {
           <div className="text-center lg:text-left lg:mt-60">
             {text.split("").map((letter, index) => (
               <motion.span
-                className="text-gradient bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent font-bold"
+                className="text-gradient bg-gradient-to-r from-purple-600 via-gray-600 to-blue-600 bg-clip-text text-transparent font-bold"
                 key={index}
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const ContactPage = () => {
           </div>
 
           <span className="text-gray-800 font-medium">Regards</span>
-          <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg font-semibold text-white p-4 hover:cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg">
+          <button className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-600 rounded-lg font-semibold text-white p-4 hover:cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg">
             Send Message
           </button>
 
