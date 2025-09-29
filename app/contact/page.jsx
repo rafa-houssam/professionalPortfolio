@@ -74,7 +74,7 @@ const ContactPage = () => {
               name="user_message"
               rows={4}
               placeholder="Write your message here..."
-              className="w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light resize-none transition-all duration-200"
+              className=" text-black w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light resize-none transition-all duration-200"
             />
           </div>
 
@@ -84,7 +84,7 @@ const ContactPage = () => {
               name="user_email"
               type="email"
               placeholder="Write your email here..."
-              className="w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light transition-all duration-200"
+              className=" text-black w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light transition-all duration-200"
             />
           </div>
 
