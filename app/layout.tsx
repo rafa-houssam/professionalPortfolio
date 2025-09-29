@@ -33,7 +33,7 @@ export default function RootLayout({
       <body  
 
       >
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 ">
+        <div className="w-screen h-fit bg-gradient-to-b from-blue-50 to-red-100 ">
          
          
 
