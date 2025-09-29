@@ -36,18 +36,18 @@ const ContactPage = () => {
   return (
 
     <motion.div
-      className="bg-[#f5f5f5] min-h-screen w-full py-10 px-8 space-y-24 overflow-hidden"
+      className="bg-[#f5f5f5] min-h-screen w-full py-6 lg:py-10 px-4 lg:px-8 space-y-12 lg:space-y-24 overflow-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-2 sm:px-4 md:px-8 lg:px-20 xl:px-48 gap-8 lg:gap-0">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
-          <div className="lg:mt-60 ">
+        <div className="h-auto lg:h-full lg:w-1/2 flex items-center justify-center text-4xl sm:text-5xl lg:text-6xl py-8 lg:py-0">
+          <div className="text-center lg:text-left lg:mt-60">
             {text.split("").map((letter, index) => (
               <motion.span
-                className=" "
+                className="text-gradient bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent font-bold"
                 key={index}
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
@@ -60,38 +60,37 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-
           </div>
         </div>
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 "
+          className="h-auto lg:h-full lg:w-1/2 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl text-lg lg:text-xl flex flex-col gap-6 lg:gap-8 justify-center p-6 sm:p-8 lg:p-24 shadow-lg border border-red-100"
         >
           <div>
-            <span className="text-black">Dear Rafa Houssam,</span>
+            <span className="text-gray-800 font-medium">Dear Rafa Houssam,</span>
             <textarea
               name="user_message"
-
+              rows={4}
               placeholder="Write your message here..."
-              className="w-full mt-2 placeholder:text-gray-400 bg-transparent  border-black outline-none shadow-inner py-1 px-2 font-light resize-none"
+              className="w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light resize-none transition-all duration-200"
             />
           </div>
 
           <div>
-            <span className="text-black">My mail address is:</span>
+            <span className="text-gray-800 font-medium">My mail address is:</span>
             <input
               name="user_email"
-              type="text"
+              type="email"
               placeholder="Write your email here..."
-              className="w-full mt-2 placeholder:text-gray-400 bg-transparent  border-black outline-none shadow-inner py-1 px-2 font-light"
+              className="w-full mt-3 placeholder:text-gray-500 bg-white/70 border border-gray-300 rounded-lg outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 py-3 px-4 font-light transition-all duration-200"
             />
           </div>
 
-          <span className="text-black">Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4 hover:cursor-pointer">
-            Send
+          <span className="text-gray-800 font-medium">Regards</span>
+          <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg font-semibold text-white p-4 hover:cursor-pointer transform hover:scale-105 transition-all duration-200 shadow-lg">
+            Send Message
           </button>
 
           {success && (
@@ -108,14 +107,14 @@ const ContactPage = () => {
 
 
       </div>
-      <div className="text-center mt-0">
-        <p className="mt-0 text-lg font-medium text-black">Available for Freelance</p>
+      <div className="text-center mt-8 lg:mt-0 px-4">
+        <p className="text-xl lg:text-2xl font-bold text-gray-800 mb-6">Available for Freelance</p>
         <div className="flex justify-center gap-4 flex-wrap">
           <a
             href="https://khamsat.com/user/rafa_houssam"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black text-white px-4 py-2 rounded"
+            className="bg-gradient-to-r from-gray-800 to-black text-white px-6 py-3 rounded-lg font-semibold hover:from-gray-700 hover:to-gray-900 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
             Khamsat
           </a>
@@ -123,7 +122,7 @@ const ContactPage = () => {
             href="https://mostaql.com/u/rafa_houssam"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-black px-4 py-2 rounded border border-black"
+            className="bg-white text-gray-800 px-6 py-3 rounded-lg border-2 border-gray-800 font-semibold hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
             Mostaql
           </a>
