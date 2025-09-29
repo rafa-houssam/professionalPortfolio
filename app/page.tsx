@@ -7,7 +7,8 @@ import Link from "next/link";
 const Homepage = () => {
   return (
     <motion.div
-      className="h-full"
+      className="min-h-screen h-full"
+      style={{ minHeight: '100dvh' }}
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
@@ -15,14 +16,13 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row gap-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="hidden lg:block relative mt-23 w-80 h-80 lg:rounded-full overflow-hidden ">
-  <Image
-    src="/hero.png"
-    alt="Hero image"
-    fill
-    className="object-cover rounded-full"
-  />
-</div>
-
+          <Image
+            src="/hero.png"
+            alt="Hero image"
+            fill
+            className="object-cover rounded-full"
+          />
+        </div>
 
         {/* TEXT CONTAINER */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 items-center justify-center text-center lg:text-left">
@@ -30,12 +30,10 @@ const Homepage = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-black">
             3rd year CS student at ESI Algiers, Web developer, AI enthusiast.
           </h1>
-          
           {/* DESCRIPTION */}
           <p className="md:text-xl text-black  ">
             Passionate about full-stack development, curious about AI, and always eager to learn and grow. I enjoy working on meaningful projects, solving problems, and exploring new ideas.
           </p>
-          
           {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-4 pb-5">
             <Link href="/portfolio">
