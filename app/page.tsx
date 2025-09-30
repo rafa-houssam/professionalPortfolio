@@ -42,7 +42,7 @@ const Homepage = () => {
               </button>
             </Link>
             <Link href="/contact">
-              <button className="p-4 rounded-lg ring-1 ring-black w-full sm:w-auto hover:cursor-pointer">
+              <button className=" text-black p-4 rounded-lg ring-1 ring-black w-full sm:w-auto hover:cursor-pointer">
                 Contact Me
               </button>
             </Link>
