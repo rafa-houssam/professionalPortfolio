@@ -65,7 +65,7 @@ const ContactPage = () => {
           
           <div className="text-center lg:text-left w-full">
             <p className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800 mb-4 lg:mb-6">
-              Available for Freelance
+              Available for Freelance 
             </p>
             <div className="flex justify-center lg:justify-start gap-3 lg:gap-4 flex-wrap">
               <a
