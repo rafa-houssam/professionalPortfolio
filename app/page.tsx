@@ -45,7 +45,7 @@ const Homepage = () => {
 
   return (
     <motion.div
-      className="h-screen overflow-hidden"
+      className="mt-17"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
