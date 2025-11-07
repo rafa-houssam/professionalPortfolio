@@ -69,7 +69,7 @@ const Homepage = () => {
           </h1>
 
           {/* DYNAMIC TYPEWRITER TITLE */}
-          <div className="h-24 md:h-28">
+          <div className="h-20 md:h-28">
             <h1 className="text-3xl md:text-4xl font-bold text-black min-h-[3rem]">
               {text}
               <span className="animate-pulse text-black">|</span>
