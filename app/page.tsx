@@ -45,7 +45,7 @@ const Homepage = () => {
 
   return (
     <motion.div
-      className="mt-17"
+      className="mt-18"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
