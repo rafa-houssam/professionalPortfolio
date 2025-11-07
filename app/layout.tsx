@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   title: "Houssam's Portfolio",
   description: "3rd year CS student at ESI Algiers - Web developer, AI enthusiast",
   icons: {
-    icon: '/hero.png',
-    shortcut: '/hero.png',
-    apple: '/hero.png',
+    icon: '/hero1.png',
+    shortcut: '/hero1.png',
+    apple: '/hero1.png',
   },
 };
 
