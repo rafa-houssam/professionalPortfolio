@@ -106,7 +106,7 @@ const PortfolioPage = () => {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-800 ">
           Do you have a project?
         </h1>
-        <div className="relative w-40 h-40 sm:w-64 sm:h-64 md:w-[500px] md:h-[500px]">
+        <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-[500px] md:h-[500px]">
           <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
@@ -121,7 +121,10 @@ const PortfolioPage = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-sm sm:text-lg">
+              <textPath
+                xlinkHref="#circlePath"
+                className="text-base sm:text-lg md:text-xl"
+              >
                 {" "}
                 Full stack developer — Let's Build Together!
               </textPath>
@@ -130,7 +133,7 @@ const PortfolioPage = () => {
 
           <Link
             href="/contact"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-sm sm:text-base hover:scale-110 transition-all duration-200 hover:cursor-pointer z-50"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-base sm:text-lg md:text-xl font-semibold hover:scale-110 transition-all duration-200 hover:cursor-pointer z-50"
             style={{ pointerEvents: "auto" }}
           >
             Hire Me
