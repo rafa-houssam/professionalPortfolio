@@ -63,7 +63,7 @@ const ContactPage = () => {
           </div>
 
           
-          <div className="text-center lg:text-left w-full">
+          {/* <div className="text-center lg:text-left w-full">
             <p className="text-lg lg:text-xl xl:text-2xl font-bold text-gray-800 mb-4 lg:mb-6">
               Available for Freelance 
             </p>
@@ -85,7 +85,7 @@ const ContactPage = () => {
                 Mostaql
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* FORM CONTAINER */}
