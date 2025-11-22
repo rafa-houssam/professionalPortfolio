@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import TransitionProvider from "./components/transitionprovider"
+import SmoothScroll from "./components/SmoothScroll";
+import Cursor from "./components/Cursor";
 import { Nunito_Sans } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
 
@@ -35,7 +37,12 @@ export default function RootLayout({
       </head>
       <body>
         <div className="w-screen h-fit bg-gradient-to-b from-blue-50 to-red-100 ">
-          <TransitionProvider>{children} <Analytics /></TransitionProvider>
+          <TransitionProvider>
+            <SmoothScroll>
+              <Cursor />
+              {children} <Analytics />
+            </SmoothScroll>
+          </TransitionProvider>
         </div>
       </body>
     </html>
