@@ -1,0 +1,7 @@
+﻿
+> ecom@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.4.2
+   - Environments: .env.local
+

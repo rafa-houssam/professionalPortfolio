@@ -99,7 +99,7 @@ const Homepage = () => {
         <div className="hidden lg:block relative w-80 h-80 lg:rounded-full  flex-shrink-0 -mt-16 -ml-8 perspective-1000">
           <div ref={imageRef} className="w-full h-full relative rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
             <Image
-              src="/hero1.png"
+              src="/unnamed.png"
               alt="Hero image"
               fill
               className="object-cover rounded-full"

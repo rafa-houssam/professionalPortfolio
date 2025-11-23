@@ -1,0 +1,8 @@
+
+> ecom@0.1.0 build
+> next build
+
+   ▲ Next.js 15.4.2
+   - Environments: .env.local
+
+Terminate batch job (Y/N)? 
