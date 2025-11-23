@@ -126,7 +126,7 @@ const PortfolioPage = () => {
                 className="text-base sm:text-lg md:text-xl"
               >
                 {" "}
-                Full stack developer — Let's Build Together!
+                Full stack developer Let's Build Together
               </textPath>
             </text>
           </motion.svg>
