@@ -25,18 +25,14 @@
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 body {
-  
   height: max-content;
-  color:var(--background) ;
+  color: var(--background);
   font-family: "Nunito Sans", sans-serif;
-   font-weight: 600;
-
+  font-weight: 600;
 }
 .adlam-display-regular {
   font-family: "ADLaM Display", system-ui;
@@ -49,4 +45,33 @@ body {
   }
 }
 
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 100vh;
+}
 
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #dbeafe, #fecaca);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #ef4444);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2563eb, #dc2626);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #dbeafe;
+}
