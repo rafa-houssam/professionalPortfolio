@@ -33,6 +33,7 @@ body {
   color: var(--background);
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
+  overflow-x: hidden;
 }
 .adlam-display-regular {
   font-family: "ADLaM Display", system-ui;
@@ -45,10 +46,9 @@ body {
   }
 }
 
-/* Custom Scrollbar Styling */
+/* Custom Scrollbar Styling - Vertical Only */
 ::-webkit-scrollbar {
   width: 12px;
-  height: 100vh;
 }
 
 ::-webkit-scrollbar-track {
