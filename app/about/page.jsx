@@ -46,7 +46,7 @@ const AboutPage = () => {
               I consider myself a determined learner, always working hard to build strong, real-world skills in web development and AI. I'm actively involved in projects, clubs, and continuous learning to make the most of my journey.
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic font-light ">
+            <span className="italic font-light text-black ">
               "I'm passionate about full-stack development, curious about AI, and always eager to learn and grow"
             </span>
             {/* BIOGRAPHY SIGN SVG*/}

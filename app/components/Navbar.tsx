@@ -1,7 +1,6 @@
 "use client";
-
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
@@ -91,17 +90,32 @@ const Navbar = () => {
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 ">
-        <Link href="https://github.com/rafa-houssam">
-          <Image src="/github.png" alt="" width={24} height={24} />
+        <Link
+          href="https://github.com/rafa-houssam"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src="/github.png" alt="github" width={24} height={24} />
         </Link>
-       
-        <Link href="https://www.instagram.com/rafa_houssam1">
+        <Link
+          href="https://www.instagram.com/rafa_houssam1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="https://www.facebook.com/houssam.rafa.2025">
+        <Link
+          href="https://www.facebook.com/houssam.rafa.2025"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image src="/facebook.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/rafa-houssam-5897312b2/">
+        <Link
+          href="https://www.linkedin.com/in/rafa-houssam-5897312b2/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
@@ -109,7 +123,7 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* MENU BUTTON */}
         <button
-        type="button"
+          type="button"
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
           onClick={() => setOpen((prev) => !prev)}
           aria-label={open ? "Close menu" : "Open menu"}

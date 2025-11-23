@@ -16,11 +16,20 @@ const Cursor = () => {
         "default"
     );
     const [mounted, setMounted] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(false);
     const [trail, setTrail] = useState<TrailDot[]>([]);
     const rafRef = useRef<number | null>(null);
+    const lastPosRef = useRef({ x: 0, y: 0, time: 0 });
 
     useEffect(() => {
         setMounted(true);
+        // Check if device is desktop (screen width > 768px)
+        const checkDesktop = () => {
+            setIsDesktop(window.innerWidth > 768);
+        };
+        checkDesktop();
+        window.addEventListener('resize', checkDesktop);
+        return () => window.removeEventListener('resize', checkDesktop);
     }, []);
 
     useEffect(() => {
@@ -85,7 +94,7 @@ const Cursor = () => {
         };
     }, []);
 
-    if (!mounted) return null;
+    if (!mounted || !isDesktop) return null;
 
     const trailNodes = trail.map((dot, idx) => {
         // newer dots at front -> larger + more opaque
