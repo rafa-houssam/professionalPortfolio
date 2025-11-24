@@ -136,7 +136,7 @@ const PortfolioPage = () => {
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-black text-white rounded-full flex items-center justify-center text-base sm:text-lg md:text-xl font-semibold hover:scale-110 transition-all duration-200 hover:cursor-pointer z-50"
             style={{ pointerEvents: "auto" }}
           >
-            Hire Me
+            Contact
           </Link>
         </div>
       </div>
