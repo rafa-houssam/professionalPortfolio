@@ -69,15 +69,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl  ">
+    <div className="h-full flex items-center justify-between px-5 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       {/* LINKS */}
-      <div className="hidden md:flex gap-4 ">
+      <div className="hidden md:flex gap-4">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
       </div>
       {/* LOGO */}
-      <div className="md:hidden lg:flex xl: xl:justify-center">
+      <div className="md:hidden lg:flex xl:justify-center">
         <Link
           href="/"
           className="text-sm bg-black rounded-md p-1 font-bold flex items-center justify-center"
@@ -88,35 +88,63 @@ const Navbar = () => {
           </span>
         </Link>
       </div>
-      {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 ">
+      {/* SOCIAL - Now visible on all screens */}
+      <div className="flex gap-3 sm:gap-4">
         <Link
           href="https://github.com/rafa-houssam"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:opacity-80 transition"
         >
-          <Image src="/github.png" alt="github" width={24} height={24} />
+          <Image
+            src="/github.png"
+            alt="github"
+            width={20}
+            height={20}
+            className="sm:w-6 sm:h-6"
+          />
         </Link>
         <Link
           href="https://www.instagram.com/rafa_houssam1"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:opacity-80 transition"
         >
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+          <Image
+            src="/instagram.png"
+            alt="instagram"
+            width={20}
+            height={20}
+            className="sm:w-6 sm:h-6"
+          />
         </Link>
         <Link
           href="https://www.facebook.com/houssam.rafa.2025"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:opacity-80 transition"
         >
-          <Image src="/facebook.png" alt="" width={24} height={24} />
+          <Image
+            src="/facebook.png"
+            alt="facebook"
+            width={20}
+            height={20}
+            className="sm:w-6 sm:h-6"
+          />
         </Link>
         <Link
           href="https://www.linkedin.com/in/rafa-houssam-5897312b2/"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:opacity-80 transition"
         >
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <Image
+            src="/linkedin.png"
+            alt="linkedin"
+            width={20}
+            height={20}
+            className="sm:w-6 sm:h-6"
+          />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
