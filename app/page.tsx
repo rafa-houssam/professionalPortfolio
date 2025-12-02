@@ -85,16 +85,13 @@ const Homepage = () => {
 
   return (
     <motion.div
-      className="min-h-[100svh] relative overflow-hidden"
+      className="overflow-y-hidden-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
-      ref={containerRef}
     >
       {/* Disable particles on small screens for performance */}
-      <div className="hidden sm:block">
-        <ParticleBackground />
-      </div>
+      
 
       <div className="relative z-10 flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 items-center lg:items-center justify-center w-full py-10 sm:py-14 md:py-16">
         {/* IMAGE CONTAINER */}
