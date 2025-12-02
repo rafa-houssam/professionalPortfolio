@@ -28,6 +28,9 @@ const certifications = {
     "/f6.jpeg",
     "/f7.jpeg",
   ],
+  "Stanford(via Coursera)": [
+    
+  ],
 };
 
 const scrollVariants = {
