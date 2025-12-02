@@ -28,7 +28,7 @@ const certifications = {
     "/f6.jpeg",
     "/f7.jpeg",
   ],
-  "Stanford (via Coursera)": [
+  "Stanford university (via Coursera)": [
     "/stf1.png",
     "/stf2.png",
     "/stf3.png",
